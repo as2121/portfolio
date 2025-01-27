@@ -52,6 +52,20 @@ html {
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
+.img-fluid {
+  max-width: 100%;
+  max-height: 100%;
+  border:5px solid white;
+  height: auto;
+   max-height: 450px;
+   width: 450px;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-fluid {
+    height:300px;
+  }
+}
 
 body {
   margin: 0;
@@ -525,11 +539,7 @@ mark,
   content: "\2014\00A0";
 }
 
-.img-fluid {
-  max-width: 100%;
-  max-height: 100%;
-  border:5px solid white
-}
+
 
 .img-thumbnail {
   padding: 0.25rem;
